@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Session - SkillWave India</title>
+    <style>
+        /* Basic Styling */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background-color: #1e3a8a; /* Dark Blue */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        .live-section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            animation: fadeIn 1s ease-in-out;
+            position: relative;
+        }
+
+        .live-section h2 {
+            font-size: 24px;
+            color: #1e3a8a;
+        }
+
+        .live-section p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .live-section img {
+            max-width: 200px;
+            border-radius: 10px;
+        }
+
+        .badge-free {
+            background-color: #2ecc71; /* Green */
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .join-btn {
+            background-color: #0F9D58; /* Google Meet Green */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .join-btn:hover {
+            background-color: #0a6f3f;
+        }
+
+        .timer {
+            font-size: 18px;
+            color: #e74c3c; /* Red */
+            margin-top: 10px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .live-section {
+                padding: 15px;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .live-section img {
+                margin-top: 20px;
+                max-width: 100%;
+            }
+
+            .header h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Live Session - SkillWave India</h1>
+    </div>
+
+    <div class="container">
+        <!-- Website Live Section -->
+        <div class="live-section">
+            <div class="content">
+                <h2>Website Live Session</h2>
+                <span class="badge-free">FREE</span>
+                <p><strong>Title:</strong> Introduction to JavaScript</p>
+                <p><strong>Description:</strong> Learn the basics of JavaScript, including syntax, variables, and functions.</p>
+                <p><strong>Instructor Name:</strong> John Doe</p>
+                <p><strong>Instructor Experience:</strong> 10 years in Web Development</p>
+                <p><strong>Date and Start Time:</strong> July 5, 2024, at 3:00 PM</p>
+                <p><strong>Live Class Duration:</strong> 2 hours</p>
+                <p class="timer" id="timer1">Class starts in: <span id="countdown1"></span></p>
+                <button class="join-btn" onclick="joinWebsiteLive()">Join Now</button>
+            </div>
+            <img src="../Images/js.jpg" alt="Website Live Session">
+        </div>
+
+        <!-- Google Meet Live Section -->
+        <div class="live-section">
+            <div class="content">
+                <h2>Google Meet Live Session</h2>
+                <span class="badge-free">FREE</span>
+                <p><strong>Title:</strong> Advanced CSS Techniques</p>
+                <p><strong>Description:</strong> Explore advanced CSS techniques for building responsive and visually appealing web pages.</p>
+                <p><strong>Instructor Name:</strong> Jane Smith</p>
+                <p><strong>Instructor Experience:</strong> 8 years in Frontend Development</p>
+                <p><strong>Date and Start Time:</strong> July 6, 2024, at 5:00 PM</p>
+                <p><strong>Live Class Duration:</strong> 1.5 hours</p>
+                <p class="timer" id="timer2">Class starts in: <span id="countdown2"></span></p>
+                <button class="join-btn" onclick="joinGoogleMeet()">Join Now</button>
+            </div>
+            <img src="../Images/css.png" alt="Google Meet Live Session">
+        </div>
+    </div>
+
+    <script>
+        // Timer for Website Live Session
+        function startTimer1() {
+            const countdownElement = document.getElementById('countdown1');
+            const eventTime = new Date('July 5, 2024 15:00:00').getTime();
+            const updateCountdown1 = setInterval(() => {
+                const currentTime = new Date().getTime();
+                const distance = eventTime - currentTime;
+
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                countdownElement.innerHTML = `${hours}h ${minutes}m ${seconds}s`;
+
+                if (distance < 0) {
+                    clearInterval(updateCountdown1);
+                    countdownElement.innerHTML = "Class is live now!";
+                }
+            }, 1000);
+        }
+
+        // Timer for Google Meet Live Session
+        function startTimer2() {
+            const countdownElement = document.getElementById('countdown2');
+            const eventTime = new Date('July 6, 2024 17:00:00').getTime();
+            const updateCountdown2 = setInterval(() => {
+                const currentTime = new Date().getTime();
+                const distance = eventTime - currentTime;
+
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                countdownElement.innerHTML = `${hours}h ${minutes}m ${seconds}s`;
+
+                if (distance < 0) {
+                    clearInterval(updateCountdown2);
+                    countdownElement.innerHTML = "Class is live now!";
+                }
+            }, 1000);
+        }
+
+        // Initialize Timers
+        startTimer1();
+        startTimer2();
+
+        // Join Now Functions
+        function joinWebsiteLive() {
+            window.location.href = '../HTML/youtube live.html'; // Change to your actual live session page
+        }
+
+        function joinGoogleMeet() {
+            window.open('https://meet.google.com/your-meet-link', '_blank');
+        }
+    </script>
+</body>
+</html>

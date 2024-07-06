@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - SkillWave India</title>
+    <link rel="stylesheet" href="../CSS/courses.css">
+    <link rel="stylesheet" href="../CSS/index.css">
+    
+</head>
+<body>
+    
+    <!-- Header -->
+    <div class="navbar">
+        <div class="menu-icon" onclick="toggleMenu()">
+            ☰
+        </div>
+        <div class="logo">
+            <img src="../Images/log.png" alt="SkillWave India Logo">
+            <span>SkillWave India</span>
+        </div>
+        <ul class="nav-links">
+            <li class="lst"><a href="../HTML/index.html">Home</a></li>
+            <li class="lst"><a href="../HTML/about.html">About</a></li>
+            <li class="dropdown lst">
+                <a href="../HTML/Courses.html" class="dropbtn">Courses</a>
+                <ul class="dropdown-content">
+                    <li><a href="../domains/developmentCourses.html">Development</a></li>
+                    <li><a href="../domains/business Courses.html">Business</a></li>
+                    <li><a href="../domains/Finance & Accounting Courses.html">Finance & Accounting</a></li>
+                    <li><a href="../domains/IT & Software Courses.html">IT & Software</a></li>
+                    <li><a href="../domains/Office Productivity Courses.html">Office Productivity</a></li>
+                    <li><a href="../domains/Personal Development Courses.html">Personal Development</a></li>
+                    <li><a href="../domains/DesignCourses.html">Design</a></li>
+                    <li><a href="../domains/Marketing Courses.html">Marketing</a></li>
+                    <li><a href="../domains/Health & Fitness Courses.html">Health & Fitness</a></li>
+                </ul>
+            </li>
+            <li class="lst"><a href="../HTML/Live session.html">Live Session</a></li>
+            <li class="lst"><a href="../HTML/services.html">Services</a></li>
+            <li class="lst"><a href="../HTML/contact.html">Contact</a></li>
+        </ul>
+        <div class="user-menu">
+            <img src="../Images/Student Profile.png" alt="User Icon" class="user-icon">
+            <ul class="user-dropdown-menu">
+                <li><a href="#">My Learning</a></li>
+                <li><a href="#">My Cart</a></li>
+                <li><a href="#">Teach on SkillWave</a></li>
+                <li><a href="#">Account Settings</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="sidebar" id="sidebar">
+        <ul class="sidebar-links">
+            <li><a href="../HTML/index.html">Home</a></li>
+            <li><a href="../HTML/about.html">About</a></li>
+            <li><a href="../HTML/Courses.html">Courses</a></li>
+            <li><a href="../HTML/Live session.html">Live Session</a></li>
+            <li><a href="../HTML/services.html">Services</a></li>
+            <li><a href="../HTML/contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <main class="courses">
+        <div class="container">
+            <h2 class="section-title">Choose Your Domain</h2>
+            <div class="domain-buttons">
+                <button class="domain-button" data-domain="Development">Development</button>
+                <button class="domain-button" data-domain="Business">Business</button>
+                <button class="domain-button" data-domain="Finance & Accounting">Finance & Accounting</button>
+                <button class="domain-button" data-domain="IT & Software">IT & Software</button>
+                <button class="domain-button" data-domain="Office Productivity">Office Productivity</button>
+                <button class="domain-button" data-domain="Personal Development">Personal Development</button>
+                <button class="domain-button" data-domain="Design">Design</button>
+                <button class="domain-button" data-domain="Marketing">Marketing</button>
+                <button class="domain-button" data-domain="Health & Fitness">Health & Fitness</button>
+            </div>
+            <div class="domain-info">
+                <!-- Content for domain information will be dynamically populated -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 SkillWave India. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../Javascript/courses.js"></script>
+    <script src="../Javascript/index.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillWave India</title>
+    <link rel="stylesheet" href="../CSS/index.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="menu-icon" onclick="toggleMenu()">
+            ☰
+        </div>
+        <div class="logo">
+            <img src="../Images/log.png" alt="SkillWave India Logo">
+            <span>SkillWave India</span>
+        </div>
+        <ul class="nav-links">
+            <li class="lst"><a href="#">Home</a></li>
+            <li class="lst"><a href="../HTML/about.html">About</a></li>
+            <li class="dropdown lst">
+                <a href="../HTML/Courses.html" class="dropbtn">Courses</a>
+                <ul class="dropdown-content">
+                    <li><a href="../domains/developmentCourses.html">Development</a></li>
+                    <li><a href="../domains/business Courses.html">Business</a></li>
+                    <li><a href="../domains/Finance & Accounting Courses.html">Finance & Accounting</a></li>
+                    <li><a href="../domains/IT & Software Courses.html">IT & Software</a></li>
+                    <li><a href="../domains/Office Productivity Courses.html">Office Productivity</a></li>
+                    <li><a href="../domains/Personal Development Courses.html">Personal Development</a></li>
+                    <li><a href="../domains/DesignCourses.html">Design</a></li>
+                    <li><a href="../domains/Marketing Courses.html">Marketing</a></li>
+                    <li><a href="../domains/Health & Fitness Courses.html">Health & Fitness</a></li>
+                </ul>
+            </li>
+            <li class="lst"><a href="../HTML/Live session.html">Live Session</a></li>
+            <li class="lst"><a href="../HTML/services.html">Services</a></li>
+            <li class="lst"><a href="../HTML/contact.html">Contact</a></li>
+        </ul>
+        <div class="user-menu">
+            <img src="../Images/Student Profile.png" alt="User Icon" class="user-icon">
+            <ul class="user-dropdown-menu">
+                <li><a href="#">My Learning</a></li>
+                <li><a href="#">My Cart</a></li>
+                <li><a href="#">Teach on SkillWave</a></li>
+                <li><a href="#">Account Settings</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="sidebar" id="sidebar">
+        <ul class="sidebar-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="../HTML/about.html">About</a></li>
+            <li><a href="../HTML/Courses.html">Courses</a></li>
+            <li><a href="../HTML/Live session.html">Live Session</a></li>
+            <li><a href="../HTML/services.html">Services</a></li>
+            <li><a href="../HTML/contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+
+    
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1>Welcome to SkillWave India</h1>
+            
+            <div class="hero-features">
+                <div class="hero-feature">
+                    <img class="i1" src="../Images/interactive.jpeg" alt="Interactive Courses">
+                    <h3>Interactive Courses</h3>
+                    <p>Engage with our hands-on coding exercises and challenges.</p>
+                </div>
+                <div class="hero-feature">
+                    <img src="../Images/expert.jpg" alt="Expert Mentorship">
+                    <h3>Expert Mentorship</h3>
+                    <p>Get guidance and support from experienced mentors.</p>
+                </div>
+                <div class="hero-feature">
+                    <img src="../Images/community.jpg" alt="Vibrant Community">
+                    <h3>Vibrant Community</h3>
+                    <p>Connect with fellow learners and collaborate on projects.</p>
+                </div>
+            </div>
+            
+            <p>Your journey to mastering coding starts here. Join us and unlock your potential!</p>
+            <a href="../HTML/login.html" class="cta-button">Register Now</a>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="features-section">
+        <h2>Why Learn with Us?</h2>
+        <div class="features">
+            <div class="feature">
+                <img src="../Images/expertInstructors.webp" alt="Feature 1">
+                <h3>Expert Instructors</h3>
+                <p>Learn from industry experts who are passionate about teaching.</p>
+            </div>
+            <div class="feature">
+                <img src="../Images/comprehensive.avif" alt="Feature 2">
+                <h3>Comprehensive Curriculum</h3>
+                <p>Our courses cover everything from basics to advanced topics.</p>
+            </div>
+            <div class="feature">
+                <img src="../Images/handsOnProject.jpeg" alt="Feature 3">
+                <h3>Hands-on Projects</h3>
+                <p>Apply your knowledge with real-world projects and assignments.</p>
+            </div>
+            <div class="feature">
+                <img src="../Images/flexible.png" alt="Feature 4">
+                <h3>Flexible Learning</h3>
+                <p>Learn at your own pace with our flexible course schedules.</p>
+            </div>
+            <div class="feature">
+                <img src="../Images/carierSupport.webp" alt="Feature 5">
+                <h3>Career Support</h3>
+                <p>Get career advice and job placement assistance.</p>
+            </div>
+            <div class="feature">
+                <img src="../Images/communityevents.png" alt="Feature 6">
+                <h3>Community Events</h3>
+                <p>Participate in hackathons, meetups, and other community events.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 SkillWave India. All rights reserved.</p>
+    </div>
+
+
+
+    <script>
+        function toggleMenu() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
+
+
+
+    
+

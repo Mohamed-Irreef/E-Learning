@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Development Courses - SkillWave India</title>
+    <style>
+        /* Basic Styling */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background-color: #1e3a8a; /* Dark Blue */
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .section-title {
+            font-size: 28px;
+            color: #2563eb; /* Blue */
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .courses-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .course-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            width: calc(25% - 20px);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+        }
+
+        .course-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .course-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .course-content {
+            padding: 15px;
+        }
+
+        .course-title {
+            font-size: 20px;
+            margin: 10px 0;
+            color: #1e3a8a; /* Dark Blue */
+        }
+
+        .instructor, .duration, .stage, .price {
+            font-size: 14px;
+            color: #555;
+            margin: 5px 0;
+        }
+
+        .ratings {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        .stars {
+            color: #ffd700; /* Gold */
+            margin-right: 5px;
+        }
+
+        .enroll-button {
+            display: block;
+            width: 100%;
+            padding: 10px 0;
+            background-color: #2563eb; /* Blue */
+            color: white;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .enroll-button:hover {
+            background-color: #1e3a8a; /* Dark Blue */
+        }
+
+        .bestseller {
+            background-color: #ffd700; /* Gold */
+            color: #333;
+            font-size: 12px;
+            padding: 5px;
+            border-radius: 5px;
+            position: absolute;
+            top: 15px;
+            left: 15px;
+        }
+
+        /* Responsive Styling */
+        @media (max-width: 768px) {
+            .course-card {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .course-card {
+                width: 100%;
+            }
+        }
+
+        /* Animation Styling */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .course-card {
+            animation: fadeInUp 0.6s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1>SkillWave India - Personal Development Courses</h1>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <!-- Free Courses Section -->
+            <div class="section-title">Free Courses</div>
+            <div class="courses-grid">
+                <!-- Free Course 1 -->
+                <div class="course-card">
+                    <img src="../Images/PD1.jpg" alt="Course Image">
+                    <div class="course-content">
+                        <div class="course-title">Goal Setting and Achievement</div>
+                        <div class="instructor">Instructor: John Doe</div>
+                        <div class="duration">Duration: 10 hours</div>
+                        <div class="stage">Stage: Beginner</div>
+                        <div class="ratings">
+                            <div class="stars">★★★★☆</div>
+                            <div>(4.5)</div>
+                        </div>
+                        <a href="../Enroll Personal Development Courses/PD1.html" style="text-decoration: none;"><button class="enroll-button">Enroll Course</button></a>
+                    </div>
+                </div>
+                <!-- Free Course 2 -->
+                <div class="course-card">
+                    <img src="../Images/PD2.jpg" alt="Course Image">
+                    <div class="course-content">
+                        <div class="course-title">Effective Communication Skills</div>
+                        <div class="instructor">Instructor: Jane Smith</div>
+                        <div class="duration">Duration: 12 hours</div>
+                        <div class="stage">Stage: Beginner</div>
+                        <div class="ratings">
+                            <div class="stars">★★★★★</div>
+                            <div>(5.0)</div>
+                        </div>
+                        <a href="../Enroll Personal Development Courses/PD2.html" style="text-decoration: none;"><button class="enroll-button">Enroll Course</button></a>
+                    </div>
+                </div>
+                <!-- Free Course 3 -->
+                <div class="course-card">
+                    <img src="../Images/PD3.jpg" alt="Course Image">
+                    <div class="course-content">
+                        <div class="course-title">Leadership Development</div>
+                        <div class="instructor">Instructor: Mike Johnson</div>
+                        <div class="duration">Duration: 15 hours</div>
+                        <div class="stage">Stage: Beginner</div>
+                        <div class="ratings">
+                            <div class="stars">★★★☆☆</div>
+                            <div>(3.0)</div>
+                        </div>
+                        <a href="../Enroll Personal Development Courses/PD3.html" style="text-decoration: none;"><button class="enroll-button">Enroll Course</button></a>
+                    </div>
+                </div>
+                <!-- Free Course 4 -->
+                <div class="course-card">
+                    <img src="../Images/PD2.jpg" alt="Course Image">
+                    <div class="course-content">
+                        <div class="course-title">Emotional Intelligence Mastery</div>
+                        <div class="instructor">Instructor: Sarah Lee</div>
+                        <div class="duration">Duration: 8 hours</div>
+                        <div class="stage">Stage: Intermediate</div>
+                        <div class="ratings">
+                            <div class="stars">★★★☆☆</div>
+                            <div>(3.5)</div>
+                        </div>
+                        <a href="../Enroll Personal Development Courses/PD4.html" style="text-decoration: none;"><button class="enroll-button">Enroll Course</button></a>
+                    </div>
+                </div>
+                <!-- Free Course 5 -->
+                <div class="course-card">
+                    <img src="../Images/PD5.jpg" alt="Course Image">
+                    <div class="course-content">
+                        <div class="course-title">Stress Management Techniques</div>
+                        <div class="instructor">Instructor: Alan Brown</div>
+                        <div class="duration">Duration: 20 hours</div>
+                        <div class="stage">Stage: Advanced</div>
+                        <div class="ratings">
+                            <div class="stars">★★★★☆</div>
+                            <div>(4.2)</div>
+                        </div>
+                        <a href="../Enroll Personal Development Courses/PD5.html" style="text-decoration: none;"><button class="enroll-button">Enroll Course</button></a>
+                    </div>
+                </div>
+                <!-- Free Course 6 -->
+                <div class="course-card">
+                    <img src="../Images/PD6.jpg" alt="Course Image">
+                    <div class="course-content">
+                        <div class="course-title">Personal Finance Planning</div>
+                        <div class="instructor">Instructor: Mark Miller</div>
+                        <div class="duration">Duration: 6 hours</div>
+                        <div class="stage">Stage: Beginner</div>
+                        <div class="ratings">
+                            <div class="stars">★★★★☆</div>
+                            <div>(4.4)</div>
+                        </div>
+                        <a href="../Enroll Personal Development Courses/PD6.html" style="text-decoration: none;"><button class="enroll-button">Enroll Course</button></a>
+                    </div>
+                </div>
+                <!-- Free Course 7 -->
+                <div class="course-card">
+                    <img src="../Images/PD7.jpg" alt="Course Image">
+                    <div class="course-content">
+                        <div class="course-title">Time Management Strategies</div>
+                        <div class="instructor">Instructor: Emily Davis</div>
+                        <div class="duration">Duration: 9 hours</div>
+                        <div class="stage">Stage: Beginner</div>
+                        <div class="ratings">
+                            <div class="stars">★★★☆☆</div>
+                            <div>(3.7)</div>
+                        </div>
+                        <a href="../Enroll Personal Development Courses/PD7.html" style="text-decoration: none;"><button class="enroll-button">Enroll Course</button></a>
+                    </div>
+                </div>
+                <!-- Free Course 8 -->
+                <div class="course-card">
+                    <img src="../Images/PD9.jpg" alt="Course Image">
+                    <div class="course-content">
+                        <div class="bestseller">Bestseller</div>
+                        <div class="course-title">Positive Psychology Principles</div>
+                        <div class="instructor">Instructor: Luke Turner</div>
+                        <div class="duration">Duration: 24 hours</div>
+                        <div class="stage">Stage: Advanced</div>
+                        <div class="price">Price: ₹499/div>
+                        <div class="ratings">
+                            <div class="stars">★★★★★</div>
+                            <div>(4.8)</div>
+                        </div>
+                        <button class="enroll-button">Pay Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Paid Courses Section -->
+            <div class="section-title">Paid Courses</div>
+            <div class="courses-grid">
+                <!-- Paid Course 1 -->
+                <div class="course-card">
+                    <img src="../Images/PD9.jpg" alt="Course Image">
+                    <div class="course-content">
+                        <div class="bestseller">Bestseller</div>
+                        <div class="course-title">Public Speaking Confidence</div>
+                        <div class="instructor">Instructor: Kevin Martin</div>
+                        <div class="duration">Duration: 40 hours</div>
+                        <div class="stage">Stage: Advanced</div>
+                        <div class="price">Price: ₹499</div>
+                        <div class="ratings">
+                            <div class="stars">★★★★☆</div>
+                            <div>(4.5)</div>
+                        </div>
+                        <button class="enroll-button">Enroll Course</button>
+                    </div>
+                </div>
+                <!-- Paid Course 2 -->
+                <div class="course-card">
+                    <img src="../Images/PD9.jpg" alt="Course Image">
+                    <div class="course-content">
+                        <div class="bestseller">Bestseller</div>
+                        <div class="course-title">Career Development Essentials</div>
+                        <div class="instructor">Instructor: Emily Davis</div>
+                        <div class="duration">Duration: 35 hours</div>
+                        <div class="stage">Stage: Intermediate</div>
+                        <div class="price">Price: ₹499</div>
+                        <div class="ratings">
+                            <div class="stars">★★★★★</div>
+                            <div>(4.7)</div>
+                        </div>
+                        <button class="enroll-button">Pay Now</button>
+                    </div>
+                </div>
+                <!-- Paid Course 3 -->
+                <div class="course-card">
+                    <img src="../Images/PD9.jpg" alt="Course Image">
+                    <div class="course-content">
+                        <div class="course-title">Assertiveness Training</div>
+                        <div class="instructor">Instructor: Chris Green</div>
+                        <div class="duration">Duration: 30 hours</div>
+                        <div class="stage">Stage: Advanced</div>
+                        <div class="price">Price: ₹499</div>
+                        <div class="ratings">
+                            <div class="stars">★★★★☆</div>
+                            <div>(4.4)</div>
+                        </div>
+                        <button class="enroll-button">Pay Now</button>
+                    </div>
+                </div>
+                <!-- Paid Course 4 -->
+                <div class="course-card">
+                    <img src="../Images/PD9.jpg" alt="Course Image">
+                    <div class="course-content">
+                        <div class="course-title">Building Resilience</div>
+                        <div class="instructor">Instructor: Nancy Brown</div>
+                        <div class="duration">Duration: 25 hours</div>
+                        <div class="stage">Stage: Intermediate</div>
+                        <div class="price">Price: ₹499</div>
+                        <div class="ratings">
+                            <div class="stars">★★★★☆</div>
+                            <div>(4.3)</div>
+                        </div>
+                        <button class="enroll-button">Pay Now</button>
+                    </div>
+                </div>
+                <!-- Paid Course 5 -->
+                <div class="course-card">
+                    <img src="../Images/PD9.jpg" alt="Course Image">
+                    <div class="course-content">
+                        <div class="course-title">Self-Confidence Boosting Techniques</div>
+                        <div class="instructor">Instructor: Steve Parker</div>
+                        <div class="duration">Duration: 22 hours</div>
+                        <div class="stage">Stage: Beginner</div>
+                        <div class="price">Price: ₹499</div>
+                        <div class="ratings">
+                            <div class="stars">★★★★☆</div>
+                            <div>(4.2)</div>
+                        </div>
+                        <button class="enroll-button">Pay Now</button>
+                    </div>
+                </div>
+                <!-- Paid Course 6 -->
+                <div class="course-card">
+                    <img src="../Images/PD9.jpg" alt="Course Image">
+                    <div class="course-content">
+                        <div class="course-title">Conflict Resolution Skills</div>
+                        <div class="instructor">Instructor: Clara Evans</div>
+                        <div class="duration">Duration: 18 hours</div>
+                        <div class="stage">Stage: Intermediate</div>
+                        <div class="price">Price: ₹499</div>
+                        <div class="ratings">
+                            <div class="stars">★★★★☆</div>
+                            <div>(4.1)</div>
+                        </div>
+                        <button class="enroll-button">Pay Nowe</button>
+                    </div>
+                </div>
+                <!-- Paid Course 7 -->
+                <div class="course-card">
+                    <img src="../Images/PD9.jpg" alt="Course Image">
+                    <div class="course-content">
+                        <div class="bestseller">Bestseller</div>
+                        <div class="course-title">Positive Psychology Principles</div>
+                        <div class="instructor">Instructor: Luke Turner</div>
+                        <div class="duration">Duration: 24 hours</div>
+                        <div class="stage">Stage: Advanced</div>
+                        <div class="price">Price: ₹499/div>
+                        <div class="ratings">
+                            <div class="stars">★★★★★</div>
+                            <div>(4.8)</div>
+                        </div>
+                        <button class="enroll-button">Pay Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // JavaScript for animating course cards
+        document.addEventListener('DOMContentLoaded', function () {
+            const cards = document.querySelectorAll('.course-card');
+            cards.forEach((card, index) => {
+                card.style.animationDelay = `${index * 0.1}s`;
+            });
+        });
+    </script>
+</body>
+</html>

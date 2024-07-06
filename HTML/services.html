@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - SkillWave India</title>
+    <style>
+        /* Basic Styling */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background-color: #1e3a8a; /* Dark Blue */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        .services-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .service-box {
+            background-color: #fff;
+            width: 30%;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            position: relative;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        .service-box img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .service-box h2 {
+            font-size: 24px;
+            color: #1e3a8a;
+            margin: 15px 0;
+        }
+
+        .service-box p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .service-box:hover {
+            transform: translateY(-10px);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .service-box {
+                width: 100%;
+                margin: 10px 0;
+            }
+
+            .header h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Our Services</h1>
+    </div>
+
+    <div class="container">
+        <div class="services-section">
+            <!-- Service 1 -->
+            <div class="service-box">
+                <img src="../Images/personalized learning.jpeg" alt="Service 1 Image">
+                <h2>Personalized Learning Paths</h2>
+                <p>Customized learning paths to suit your career goals and personal interests. Learn at your own pace with courses curated just for you.</p>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="service-box">
+                <img src="../Images/interactive.jpeg" alt="Service 2 Image">
+                <h2>Live Interactive Sessions</h2>
+                <p>Engage with instructors and peers through live sessions, webinars, and Q&A forums. Get your doubts cleared instantly and learn from real-time interactions.</p>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="service-box">
+                <img src="../Images/comprehensive study.jpg" alt="Service 3 Image">
+                <h2>Comprehensive Study Material</h2>
+                <p>Access a wide range of study materials including eBooks, video tutorials, and downloadable resources to enhance your learning experience.</p>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="service-box">
+                <img src="../Images/expert mentorship1.webp" alt="Service 4 Image">
+                <h2>Expert Mentorship</h2>
+                <p>Receive guidance and feedback from industry experts to help you stay on track and achieve your learning objectives effectively.</p>
+            </div>
+
+            <!-- Service 5 -->
+            <div class="service-box">
+                <img src="../Images/certificate.jpg" alt="Service 5 Image">
+                <h2>Certifications</h2>
+                <p>Earn certificates upon course completion to showcase your skills and knowledge to potential employers and peers.</p>
+            </div>
+
+            <!-- Service 6 -->
+            <div class="service-box">
+                <img src="../Images/career guidance.jpeg" alt="Service 6 Image">
+                <h2>Career Guidance</h2>
+                <p>Get professional career guidance to help you make informed decisions about your future and reach your full potential.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
